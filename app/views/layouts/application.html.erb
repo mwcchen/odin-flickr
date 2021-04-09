@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <% if flash.now[:alert] %>
+      <%= flash.now[:alert] %>
+    <% else %>
+      <br>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

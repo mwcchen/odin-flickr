@@ -1,0 +1,15 @@
+<%= form_with url: :root, method: :get do |form| %>
+  <%= form.label :user_id, "Search by ID:" %>
+  <%= form.text_field :user_id %>
+  <%= form.submit "search", name: nil %>
+<% end %>
+<br>
+<% if @photos %>
+  Showing photos belonging to <%= params[:user_id] %>
+  <br>
+  <% @photos.each do |photo| %>
+    <img src="<%= Flickr.url_n(photo) %>"/>
+  <% end %>
+<% else %>
+  Hint: Try searching "192716074@N04"
+<% end %>
