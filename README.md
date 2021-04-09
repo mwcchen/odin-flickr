@@ -1,24 +1,8 @@
-# README
+Project for practice with external APIs from https://www.theodinproject.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this case, I used Flickr's API to grab images belonging to a user using their NSID.
 
-Things you may want to cover:
+I used this Flickr gem to access the API: https://github.com/cyclotron3k/flickr
+and I used Figaro to set the environment variables: https://github.com/laserlemon/figaro
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployed on Heroku here: https://ancient-cliffs-59146.herokuapp.com/
